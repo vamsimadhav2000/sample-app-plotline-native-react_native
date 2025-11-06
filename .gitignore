@@ -1,34 +1,90 @@
-# Gradle files
-.gradle/
-build/
+# # Gradle files
+# .gradle/
+# build/
 
-# Local configuration file (sdk path, etc)
-local.properties
+# # Local configuration file (sdk path, etc)
+# local.properties
 
-# Log/OS Files
+# # Log/OS Files
+# *.log
+
+# # Android Studio generated files and folders
+# captures/
+# .externalNativeBuild/
+# .cxx/
+# *.aab
+# *.apk
+# output-metadata.json
+
+# # IntelliJ
+# *.iml
+# .idea/
+# misc.xml
+# deploymentTargetDropDown.xml
+# render.experimental.xml
+
+# # Keystore files
+# *.jks
+# *.keystore
+
+# # Google Services (e.g. APIs or Firebase)
+# google-services.json
+
+# # Android Profiling
+# *.hprof
+
+# ===== Node / React Native =====
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 *.log
 
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.aab
-*.apk
-output-metadata.json
+# Optional: ignore lockfiles if you prefer not to commit them
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
 
-# IntelliJ
-*.iml
+# ===== React Native / Metro caches =====
+.expo/
+.expo-shared/
+*.expo/
+*.expo-shared/
+.rncache/
+dist/
+coverage/
+
+# ===== hostapp (native Android) =====
+hostapp/.gradle/
+hostapp/build/
+hostapp/app/build/
+hostapp/local.properties
+hostapp/.idea/
+hostapp/*.iml
+
+# ===== rnUiApp Android =====
+rnUiApp/android/.gradle/
+rnUiApp/android/build/
+rnUiApp/android/app/build/
+rnUiApp/android/local.properties
+rnUiApp/android/.idea/
+rnUiApp/android/*.iml
+
+# If you add local .aar/.jar libs, keep them tracked:
+# !rnUiApp/android/app/libs/
+# !rnUiApp/android/app/libs/*.aar
+# !hostapp/app/libs/
+# !hostapp/app/libs/*.aar
+
+# ===== System / IDE =====
+.DS_Store
+Thumbs.db
 .idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
+*.iml
 
-# Keystore files
-*.jks
-*.keystore
-
-# Google Services (e.g. APIs or Firebase)
-google-services.json
-
-# Android Profiling
-*.hprof
+# ===== Keep Gradle wrappers (both projects) =====
+!**/gradlew
+!**/gradlew.bat
+!**/gradle/wrapper/gradle-wrapper.jar
+!**/gradle/wrapper/gradle-wrapper.properties
