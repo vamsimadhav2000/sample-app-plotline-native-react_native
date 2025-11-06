@@ -8,7 +8,7 @@ import com.facebook.react.ReactPackage
 import com.facebook.react.common.LifecycleState
 import com.facebook.react.shell.MainReactPackage
 import com.facebook.soloader.SoLoader
-import com.reactnativeplotline.RNPlotlinePackage
+//import com.reactnativeplotline.RNPlotlinePackage
 
 class CustomApplication : Application() {
 
@@ -23,7 +23,7 @@ class CustomApplication : Application() {
         val packages: List<ReactPackage> = listOf(
             MainReactPackage(),
             // include your library's package if you exposed one (optional)
-            RNPlotlinePackage()
+//            RNPlotlinePackage()
         )
 
         reactInstanceManager = ReactInstanceManager.builder()
