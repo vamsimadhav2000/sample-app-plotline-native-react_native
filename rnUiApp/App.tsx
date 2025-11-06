@@ -24,7 +24,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-//import Plotline from 'plotline-engage';
+import Plotline from 'plotline-engage';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -58,7 +58,7 @@ function Section({children, title}: SectionProps): React.JSX.Element {
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
-  //Plotline.init("ZjRiODc0MDYtMGM4Yi00OThlLWJjYzktZTMyYzdjZTVhZGNl", "react_vamsi_sample");
+  Plotline.init("ZjRiODc0MDYtMGM4Yi00OThlLWJjYzktZTMyYzdjZTVhZGNl", "react_vamsi_sample");
 
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
